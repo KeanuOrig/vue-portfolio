@@ -1,14 +1,15 @@
 <template>
-  <div class="h-screen bg-image flex flex-row items-center justify-center">
+  <div class="h-screen bg-image flex flex-col items-center justify-center">
 
     <div class="text-center">
       <img src="../assets/self.png" class="w-[50rem] lg:h-[37rem]">
-      <div class="text-6xl font-mono">Keanu Orig</div>
-      <div class="text-2xl font-mono">Web Developer / Software Engineer</div>
     </div>
 
-    <!-- Start Resume -->
-    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[5rem] h-auto">
+    <div class="sm:text-6xl text-4xl font-mono">Keanu Orig</div>
+
+    <div class="sm:text-2xl text-1xl font-mono">Web Developer / Software Engineer</div>
+
+    <div class="relative">
       <a href="/Orig_Keanu_Resume.pdf" download>
         <div class="letter-image">
           <div class="animated-mail">
@@ -29,7 +30,7 @@
         </div>
       </a>
     </div> 
-    <!-- End Resume -->
+    <div class=""></div>
   </div>
 </template>
 
@@ -94,9 +95,9 @@
     left: 50%;
     width: 200px;
     height: 200px;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
     cursor: pointer;
   }
 

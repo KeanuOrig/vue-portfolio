@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white pt-12">
+  <div class="bg-white sm:pt-44">
     <div class="text-center mx-auto lg:mb-4 max-w-[510px]">
         <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
         <span class="inline-block text-green-600 pt-12">Experience()</span>

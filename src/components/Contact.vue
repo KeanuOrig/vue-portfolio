@@ -6,11 +6,11 @@
             </h2>
         </div>
 
-        <div class="h-screen bg-image relative items-top justify-center pt-20 lg:pt-[120px] bg-white dark:bg-gray-900 sm:items-center">
-            <div class="max-w-6xl lg:max-w-screen-xl m-auto mx-auto sm:px-6 lg:px-8">
+        <div class="sm:h-screen bg-image relative items-top justify-center pt-20 lg:pt-[120px] bg-white dark:bg-gray-900 sm:items-center">
+            <div class="pb-64 sm:pb-0 max-w-6xl lg:max-w-screen-xl m-auto mx-auto sm:px-6 lg:px-8">
                 <div class="overflow-hidden">
                     <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6 mr-2 bg-blue-600 dark:bg-gray-800 sm:rounded-lg">
+                        <div class="p-6 bg-blue-600 dark:bg-gray-800 sm:rounded-lg">
                             <h1 class="text-4xl sm:text-5xl text-gray-100 dark:text-white font-extrabold tracking-tight">
                                 Get in touch
                             </h1>
@@ -62,12 +62,11 @@
                             <input type="email" name="user_email" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
                             <label>Message</label>
                             <textarea name="message" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
-                            <input type="submit" value="Send" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
                             <!-- Success Alert -->
                             <div v-if="successMessage" class="md:w-100 bg-green-600 hover:bg-green text-white font-bold py-3 px-6 rounded-lg mt-3">
                             {{ successMessage }}
                             </div>
-
+                            <input v-else type="submit" value="Send" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
                             <!-- Error Alert -->
                             <div v-if="errorMessage" class="md:w-100 bg-red-600 hover:bg-red text-white font-bold py-3 px-6 rounded-lg mt-3">
                             {{ errorMessage }}
