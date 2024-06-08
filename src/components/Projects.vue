@@ -8,7 +8,7 @@
             </h2>
          </div>
 
-         <div class="flex flex-wrap -mx-4">
+         <div class="flex flex-wrap">
 
             <div v-for="project in projects" :key="project.id" class="w-full md:w-1/2 lg:w-1/3">
                <div class="px-10 pt-10 pb-4 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8">
