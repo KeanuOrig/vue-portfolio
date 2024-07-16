@@ -63,7 +63,7 @@ import p0 from '@/assets/p0.jpg';
 import ai from '@/assets/ai.gif';
 import p4 from '@/assets/p4.png';   
 import p5 from '@/assets/p5.png';
-import react from '@/assets/react.gif';
+import p6 from '@/assets/p6.png';
 import p7 from '@/assets/p7.jpg';
 
 const projects = ref([
@@ -118,7 +118,7 @@ const projects = ref([
         {
           id: 7,
           title: 'Ecommerce Application',
-          image: react,
+          image: p6,
           link: 'https://cs3-ecommerce-ecru.vercel.app/',
           description: `This is a capstone project under Zuitt's Fullstack Development bootcamp. It is a responsive ecommerce website using the MERN stack.`,
           date: '2021'
