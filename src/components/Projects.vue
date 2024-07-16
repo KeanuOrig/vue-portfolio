@@ -59,24 +59,32 @@
 
 <script setup>
 import { ref } from 'vue';
-import p0 from '../assets/p0.jpg';
-import p1 from '../assets/p1.png';
-import p4 from '../assets/p4.png';
-import p5 from '../assets/p5.png';
-import p6 from '../assets/p6.png';
-import p7 from '../assets/p7.jpg';
+import p0 from '@/assets/p0.jpg';
+import ai from '@/assets/ai.gif';
+import p4 from '@/assets/p4.png';   
+import p5 from '@/assets/p5.png';
+import react from '@/assets/react.gif';
+import p7 from '@/assets/p7.jpg';
 
 const projects = ref([
         {
           id: 1,
-          title: 'FAQ System',
-          image: p1,
-          link: 'https://devpost.com/software/ai-faq-system?fbclid=IwZXh0bgNhZW0CMTAAAR2XFmppa3tEDfsoXM9bpKzKVCxCtJGANBRRUZRf_0aOfmlp9qgRtYcSW4o_aem_AdIjxseggletwljFfo7QQf-6pJ0TKwHpC_1eDioKanGcSPoBQF-vWs_VxNhFP56TyjCgg4mPSFr1o7lwjZBht574',
-          description: 'Google AI hackathon entry. A project utilizing Google Gemini AI, empowering users with AI-Powered answers',
+          title: 'Hotel Property Management System (PMS)',
+          image: p0,
+          link: null,
+          description: 'Developed a Full Stack Laravel web application for a Japanese client managing multiple hotels, featuring reservation management, payments, orders, third-party API integrations, and more.',
           date: '2024'
         },
         {
           id: 2,
+          title: 'FAQ System',
+          image: ai,
+          link: 'https://devpost.com/software/ai-faq-system?fbclid=IwZXh0bgNhZW0CMTAAAR2XFmppa3tEDfsoXM9bpKzKVCxCtJGANBRRUZRf_0aOfmlp9qgRtYcSW4o_aem_AdIjxseggletwljFfo7QQf-6pJ0TKwHpC_1eDioKanGcSPoBQF-vWs_VxNhFP56TyjCgg4mPSFr1o7lwjZBht574',
+          description: 'Google AI hackathon entry. A project utilizing Google Gemini AI, empowering users with AI-Powered answers.',
+          date: '2024'
+        },
+        {
+          id: 3,
           title: 'Web Treasury System',
           image: p0,
           link: null,
@@ -84,7 +92,7 @@ const projects = ref([
           date: '2023'
         },
         {
-          id: 3,
+          id: 4,
           title: 'Pera Remit System',
           image: p0,
           link: null,
@@ -92,7 +100,7 @@ const projects = ref([
           date: '2023'
         },
         {
-          id: 4,
+          id: 5,
           title: 'Responsive Landing Page',
           image: p4,
           link: 'https://github.com/KeanuOrig/LandingPageEcommerce',
@@ -100,7 +108,7 @@ const projects = ref([
           date: '2022'
         },
         {
-          id: 5,
+          id: 6,
           title: 'Movie Review Application',
           image: p5,
           link: 'https://github.com/KeanuOrig/MovieApp',
@@ -108,15 +116,15 @@ const projects = ref([
           date: '2022'
         },
         {
-          id: 6,
+          id: 7,
           title: 'Ecommerce Application',
-          image: p6,
+          image: react,
           link: 'https://cs3-ecommerce-ecru.vercel.app/',
           description: `This is a capstone project under Zuitt's Fullstack Development bootcamp. It is a responsive ecommerce website using the MERN stack.`,
           date: '2021'
         },
         {
-          id: 7,
+          id: 8,
           title: 'Oil and Gas Plant Model',
           image: p7,
           link: null,
