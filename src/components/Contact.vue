@@ -56,21 +56,47 @@
                         </div>
 
                         <form ref="form" @submit.prevent="sendEmail" class="p-6 flex flex-col justify-center">
+                            <div v-if="successMessage" class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-5" role="alert">
+                                <strong class="font-bold">Success! </strong>
+                                <span class="block sm:inline">{{ successMessage }}</span>
+                            </div>
+
+                            <div v-if="warningMessage" class="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded relative mb-5" role="alert">
+                                <strong class="font-bold">Warning! </strong>
+                                <span class="block sm:inline">{{ warningMessage }}</span>
+                            </div>
+
+                            <div v-if="errorMessage" class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-5" role="alert">
+                                <strong class="font-bold">Success! </strong>
+                                <span class="block sm:inline">{{ errorMessage }}</span>
+                            </div>
+
                             <label>Name</label>
-                            <input type="text" name="user_name" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                            <input type="text" 
+                                name="user_name" 
+                                v-model="form.user_name"
+                                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                            >
+
                             <label>Email</label>
-                            <input type="email" name="user_email" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                            <input type="email" 
+                                name="user_email" 
+                                v-model="form.user_email"
+                                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                            
                             <label>Message</label>
-                            <textarea name="message" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
-                            <!-- Success Alert -->
-                            <div v-if="successMessage" class="md:w-100 bg-green-600 hover:bg-green text-white font-bold py-3 px-6 rounded-lg mt-3">
-                            {{ successMessage }}
+                            <textarea 
+                                type="text" 
+                                name="message" 
+                                v-model="form.message"
+                                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
+                            
+                            <div v-if="isLoading" class="md:w-32 bg-green-600 hover:bg-green text-white font-bold py-3 px-6 rounded-lg mt-3 flex justify-center items-center">
+                                <img class="w-20 h-6 justify-center animate-spin" src="https://www.svgrepo.com/show/70469/loading.svg" alt="Loading icon">
                             </div>
+
                             <input v-else type="submit" value="Send" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
-                            <!-- Error Alert -->
-                            <div v-if="errorMessage" class="md:w-100 bg-red-600 hover:bg-red text-white font-bold py-3 px-6 rounded-lg mt-3">
-                            {{ errorMessage }}
-                            </div>
+
                         </form>
                     </div>
                 </div>
@@ -88,25 +114,49 @@
     export default {
     data() {
         return {
-        successMessage: '',
-        errorMessage: '',
+            form: {
+                user_name: '',
+                user_email: '',
+                message: '',
+            },
+            isLoading: false,
+            successMessage: '',
+            errorMessage: '',
+            warningMessage: ''
         };
     },
     methods: {
+        
         sendEmail() {
-        emailjs
-            .sendForm('service_32zs0io', 'template_ge9dx6v', this.$refs.form, {
-            publicKey: 'WNq712M0mKK5MURyY',
-            })
-            .then(
-            () => {
-                this.successMessage = 'Email sent successfully!';
-                this.errorMessage = ''; // Clear error message if any
-            },
-            (error) => {
-                this.errorMessage = `Error sending email: ${error.text}`;
-                this.successMessage = ''; // Clear success message if any
-            },
+            this.isLoading = true;
+            this.successMessage = '';
+            this.errorMessage = '';
+            this.warningMessage = '';
+            
+            if (!this.form.user_name || !this.form.user_email || !this.form.message) {
+                this.warningMessage = 'All fields are required.';
+                this.isLoading = false;
+                return;
+            }
+
+            emailjs
+                .sendForm('service_32zs0io', 'template_ge9dx6v', this.$refs.form, {
+                publicKey: 'WNq712M0mKK5MURyY',
+                })
+                .then(
+                () => {
+                    console.log('sent')
+                    this.successMessage = 'Email sent successfully!';
+                    this.errorMessage = ''; // Clear error message if any
+                    this.warningMessage = '';
+                    this.isLoading = false;
+                },
+                (error) => {
+                    this.errorMessage = `Error sending email: ${error.text}`;
+                    this.successMessage = ''; // Clear success message if any
+                    this.warningMessage = '';
+                    this.isLoading = false;
+                },
             );
         },
     },
