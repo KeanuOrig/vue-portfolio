@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "date": "2018-2022",
+      "description": "Utilized SP3D and Autocad software for GPX and GYO project. Also part of the development team for creating software solutions to expedite construction and instrument deliverables.",
+      "link": null,
+      "image": "images/p7.jpg",
+      "title": "Oil and Gas Plant Model"
+    },
+    {
+      "id": 2,
+      "date": "2021",
+      "description": "This is a capstone project under Zuitt's Fullstack Development bootcamp. It is a responsive ecommerce website using the MERN stack.",
+      "link": "https://cs3-ecommerce-ecru.vercel.app/",
+      "image": "images/p6.png",
+      "title": "Ecommerce Application"
+    },
+    {
+      "id": 3,
+      "date": "2022",
+      "description": "A CRUD application. Built the Front End using React.js while utilizing Redux for application state management. Designed the Back End using Node.js and Express.js for handling HTTP requests and used MySQL for the database.",
+      "link": "https://github.com/KeanuOrig/MovieApp",
+      "image": "images/p5.png",
+      "title": "Movie Review Application"
+    },
+    {
+      "id": 4,
+      "date": "2022",
+      "description": "A responsive and animated landing page for a website showcasing my skills in HTML, CSS, GSAP, and Javascript.",
+      "link": "https://github.com/KeanuOrig/LandingPageEcommerce",
+      "image": "images/p4.png",
+      "title": "Responsive Landing Page"
+    },
+    {
+      "id": 5,
+      "date": "2023",
+      "description": "Led the development efforts to create a comprehensive partner system utilizing technologies such as Lumen and Vue.js.",
+      "link": null,
+      "image": "images/p0.jpg",
+      "title": "Pera Remit System"
+    },
+    {
+      "id": 6,
+      "date": "2023",
+      "description": "Contributed to a team effort to automate the web treasury system, leveraging technologies like Laravel and Google Cloud Scheduler.",
+      "link": null,
+      "image": "images/p0.jpg",
+      "title": "Web Treasury System"
+    },
+    {
+      "id": 7,
+      "date": "2024",
+      "description": "Google AI hackathon entry. A project utilizing Google Gemini AI, empowering users with AI-Powered answers.",
+      "link": "https://devpost.com/software/ai-faq-system?fbclid=IwZXh0bgNhZW0CMTAAAR2XFmppa3tEDfsoXM9bpKzKVCxCtJGANBRRUZRf_0aOfmlp9qgRtYcSW4o_aem_AdIjxseggletwljFfo7QQf-6pJ0TKwHpC_1eDioKanGcSPoBQF-vWs_VxNhFP56TyjCgg4mPSFr1o7lwjZBht574",
+      "image": "images/ai.gif",
+      "title": "FAQ System"
+    },
+    {
+      "id": 8,
+      "date": "2024",
+      "description": "Developed a Full Stack Laravel web application for a Japanese client managing multiple hotels, featuring reservation management, payments, orders, third-party API integrations, and more.",
+      "link": null,
+      "image": "images/p0.jpg",
+      "title": "Hotel Property Management System (PMS)"
+    }
+  ]
+  

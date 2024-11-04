@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Instrumentation and Control Engineer 3",
+      "company": "Chiyoda Philippines Corporation",
+      "description": "Expedited construction, instrument, and system design deliverables.",
+      "date": "September 2018 – April 2022"
+    },
+    {
+      "id": 2,
+      "title": "Backend Developer",
+      "company": "Petnet Inc.",
+      "description": "Developed and maintained RESTful APIs, microservices, and backend services using Laravel and Lumen frameworks.",
+      "date": "April 2022 – June 2024"
+    },
+    {
+      "id": 3,
+      "title": "Software Engineer",
+      "company": "HiPe Inc.",
+      "description": "Applied engineering principles and knowledge of programming languages to build software solutions for end users.",
+      "date": "June 2024 – Present"
+    }
+  ]
+  

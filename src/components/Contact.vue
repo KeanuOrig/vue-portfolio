@@ -2,13 +2,13 @@
     <div class="pt-12"> 
         <div class="text-center mx-auto lg:mb-4 max-w-[510px]">
             <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-            <span class="inline-block text-green-600 pt-12">Contact()</span>
+            <span :class="['inline-block text-green-600 pt-12', isVisible ? 'animate-fadeinbounceleft' : '']">Contact()</span>
             </h2>
         </div>
 
         <div class="sm:h-screen bg-image relative items-top justify-center pt-20 lg:pt-[120px] bg-white dark:bg-gray-900 sm:items-center">
             <div class="pb-64 sm:pb-0 max-w-6xl lg:max-w-screen-xl m-auto mx-auto sm:px-6 lg:px-8">
-                <div class="overflow-hidden">
+                <div :class="['overflow-hidden', isVisible ? 'animate-fadeinexpand' : '']">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6 bg-blue-600 dark:bg-gray-800 sm:rounded-lg">
                             <h1 class="text-4xl sm:text-5xl text-gray-100 dark:text-white font-extrabold tracking-tight">
@@ -109,9 +109,16 @@
 </template>
 
 <script>
+    import { defineProps } from 'vue';
     import emailjs from '@emailjs/browser';
-    
+
     export default {
+    props: {
+        isVisible: {
+        type: Boolean,
+        required: true
+        }
+    },
     data() {
         return {
             form: {

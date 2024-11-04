@@ -3,19 +3,19 @@
 <template>
     <nav class="sticky top-0 bg-blakish relative px-6 py-6 flex justify-between items-center z-10">
 		<ul class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 flex mx-auto items-center space-x-6">
-			<li @click="scrollToHome" class="text-sm text-gray-100 navi">
+			<li @click="scrollTo('home')" class="text-sm text-gray-100 navi cursor-pointer">
                 Home
             </li>
-			<li @click="scrollToExperience" class="text-sm text-gray-100 navi">
+			<li @click="scrollTo('experience')" class="text-sm text-gray-100 navi cursor-pointer">
                 Experience
             </li>
-			<li @click="scrollToProjects" class="text-sm text-gray-100 navi">
+			<li @click="scrollTo('projects')" class="text-sm text-gray-100 navi cursor-pointer">
                 Projects
             </li>
-			<li @click="scrollToTools" class="text-sm text-gray-100 navi">
+			<li @click="scrollTo('tools')" class="text-sm text-gray-100 navi cursor-pointer">
                 Tools
             </li>
-			<li @click="scrollToContact" class="text-sm text-gray-100 navi">
+			<li @click="scrollTo('contact')" class="text-sm text-gray-100 navi cursor-pointer">
                 Contact
             </li>
 		</ul>
@@ -23,26 +23,10 @@
 </template>
 
 <script setup>
-	import { ref, onMounted } from 'vue';
 
-	const scrollToHome = () => {
-	emit('scrollToSection', $refs.homeSection);
-	};
-
-	const scrollToExperience = () => {
-	emit('scrollToSection', $refs.experienceSection);
-	};
-
-	const scrollToProjects = () => {
-	emit('scrollToSection', $refs.projectsSection);
-	};
-
-	const scrollToTools = () => {
-	emit('scrollToSection', $refs.toolsSection);
-	};
-
-	const scrollToContact = () => {
-	emit('scrollToSection', $refs.contactSection);
+	const scrollTo = (view) => {
+		const el = document.getElementById(view);
+		el.scrollIntoView({behavior: "smooth"});
 	};
 	
 </script>

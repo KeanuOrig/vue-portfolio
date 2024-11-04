@@ -1,15 +1,16 @@
 <template>
-  <div class="h-screen bg-image flex flex-col items-center justify-center">
+  <div class="h-screen bg-image flex flex-col items-center justify-center ">
 
     <div class="text-center">
       <img src="../assets/self.png" class="w-[50rem] lg:h-[37rem]">
     </div>
 
-    <div class="sm:text-6xl text-4xl font-mono">Keanu Orig</div>
+    <div class='sm:text-6xl text-4xl font-mono'>Keanu Orig</div>
 
-    <div class="sm:text-2xl text-1xl font-mono">Web Developer / Software Engineer</div>
+    
+    <div class='sm:text-2xl text-1xl font-mono'>Web Developer / Software Engineer</div>
 
-    <div class="relative">
+    <div :class="['relative', isVisible ? 'animate-fadeinexpand' : '']">
       <a href="/Orig_Keanu_Resume.pdf" download>
         <div class="letter-image">
           <div class="animated-mail">
@@ -34,10 +35,18 @@
   </div>
 </template>
 
+<script setup>
+import { defineProps } from 'vue';
+
+const props = defineProps({
+  isVisible: Boolean
+});
+</script>
+
 <style scoped>
 
   .bg-image {
-    background-image: url("../assets/background.png");
+    background-image: url("@/assets/background.png");
     background-size: cover;
   }
   
