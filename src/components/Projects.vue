@@ -11,7 +11,7 @@
          <div class="flex flex-wrap">
 
             <div v-for="project in projectList" :key="project.id" class="w-full md:w-1/2 lg:w-1/3">
-               <div class="px-10 pt-10 pb-4 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8 hover:animate-glow">
+               <div class="relative h-[40rem] px-10 pt-10 pb-4 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8 hover:animate-glow">
 
                   <div 
                      class="w-[300px] h-[300px] mx-auto flex items-center justify-center bg-primary rounded-2xl mb-8" 
@@ -31,7 +31,7 @@
                   <p class="text-body-color">
                      {{ project.description }}
                   </p>
-                  <div v-if=project.link class="text-right -mx-4">
+                  <div v-if=project.link class="absolute bottom-5 right-8 text-right -mx-4 pt-4">
                      <div class="inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm">
                        <div class="absolute flex-shrink-0 flex items-center justify-center">
                          <span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>
@@ -40,7 +40,7 @@
                      </div>
                   </div>
 
-                  <div v-else class="text-right -mx-4 pt-4">
+                  <div v-else class="absolute bottom-5 right-8 text-right -mx-4 pt-4">
                      <div class="inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm">
                        <div class="absolute flex-shrink-0 flex items-center justify-center">
                          <span class="h-1.5 w-1.5 rounded-full bg-red-500"></span>
