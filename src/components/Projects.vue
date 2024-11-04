@@ -58,9 +58,8 @@
 </template>
 
 <script setup>
-   import { ref } from 'vue';
+   import { ref, defineProps } from 'vue';
    import projectsData from '@/assets/data/projects.json';
-   import { defineProps } from 'vue';
 
    const props = defineProps({
    isVisible: Boolean
