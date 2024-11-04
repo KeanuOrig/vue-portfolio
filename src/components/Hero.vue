@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen bg-image flex flex-col items-center justify-center ">
 
-    <div class="text-center">
+    <div :class="['text-center', isVisible ? 'animate-fadeinexpand' : '']">
       <img src="../assets/self.png" class="w-[50rem] lg:h-[37rem]">
     </div>
 
@@ -10,7 +10,7 @@
     
     <div class='sm:text-2xl text-1xl font-mono'>Web Developer / Software Engineer</div>
 
-    <div :class="['relative', isVisible ? 'animate-fadeinexpand' : '']">
+    <div :class="['relative', isVisible ? 'animate-wiggle' : '']">
       <a href="/Orig_Keanu_Resume.pdf" download>
         <div class="letter-image">
           <div class="animated-mail">

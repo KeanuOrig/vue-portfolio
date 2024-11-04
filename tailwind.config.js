@@ -24,6 +24,7 @@ module.exports = {
         expandcircle: 'expand-circle 0.5s ease forwards',
         fadeindown: 'fade-in-down 1s ease-in 0.25s 1',
         glow: 'glow 0.6s ease-in-out forwards',
+        zoominup: 'zoom-in-up 1s ease-out 0.25s 1',
       },
       keyframes: {
         "grow": {
@@ -33,7 +34,8 @@ module.exports = {
         },
         "grow-once": {
           '0%': { transform: 'scale(1)' },
-          '100%': { transform: 'scale(1.1)' },
+          '50%': { transform: 'scale(1.2)' },
+          '100%': { transform: 'scale(1)' },
         },
         "shake": {
           "0%, 100%": { transform: "translateX(0)" }, 
@@ -153,6 +155,20 @@ module.exports = {
           },
           "100%": {
               backgroundColor: "#bfffbf"
+          },
+        },
+        "zoom-in-up": {
+          "0%": {
+            opacity: 0,
+            transform: "scale3d(0.3, 0.3, 0.3) translate3d(0, 100%, 0)",
+          },
+          "80%": {
+            opacity: 0.8,
+            transform: "scale3d(1.1, 1.1, 1.1)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate3d(0, 0%, 0)"
           },
         },
       },

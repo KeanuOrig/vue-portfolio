@@ -10,8 +10,10 @@
 
          <div class="flex flex-wrap">
 
-            <div v-for="project in projectList" :key="project.id" class="w-full md:w-1/2 lg:w-1/3">
-               <div class="relative h-[40rem] px-10 pt-10 pb-4 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8 hover:animate-glow">
+            <div v-for="(project, index) in projectList" :key="project.id" ref="projectRefs" class="w-full md:w-1/2 lg:w-1/3">
+               <div :class="['relative h-[40rem] px-10 pt-10 pb-4 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8 rounded hover:bg-sky-100', 
+                  visibilityMap[index] ? 'animate-growonce' : '']"  
+                  :style="{ animationDelay: `${(index + 1) * 200}ms` }">
 
                   <div 
                      class="w-[300px] h-[300px] mx-auto flex items-center justify-center bg-primary rounded-2xl mb-8" 
@@ -58,13 +60,22 @@
 </template>
 
 <script setup>
-   import { ref, defineProps } from 'vue';
+   import { ref, defineProps, onMounted, nextTick } from 'vue';
    import projectsData from '@/assets/data/projects.json';
+   import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
    const props = defineProps({
    isVisible: Boolean
    });
 
    const projectList = ref(projectsData.reverse());
+   const projectRefs = ref([]);
+   const { visibilityMap, observeElement } = useIntersectionObserver();
 
+   onMounted(async () => {
+      await nextTick();
+      projectRefs.value.forEach((el, index) => {
+         observeElement(el, index);
+      });
+   });
 </script>

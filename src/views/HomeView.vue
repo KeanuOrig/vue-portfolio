@@ -37,7 +37,6 @@
     // Wait until DOM updates
     await nextTick();
 
-    // Observe each section
     observeElement(homeSection.value, 'home');
     observeElement(experienceSection.value, 'experience');
     observeElement(projectsSection.value, 'projects');
