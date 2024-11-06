@@ -70,6 +70,14 @@
         "link": "https://pick-and-go-cafe.vercel.app/",
         "image": "images/p9.png",
         "title": "Pick & Go Cafe"
+    },
+    {
+        "id": 10,
+        "date": "2024",
+        "description": "Built an HRIS mobile application for Hipe using Flutter, featuring attendance tracking, leave application management, and an intuitive calendar interface.",
+        "link": "https://github.com/KeanuOrig/FlutterHRIS",
+        "image": "images/p10.png",
+        "title": "HRIS Mobile App"
     }
 ]
   
