@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "name": "JavaScript",
+        "image": "/images/icons/1.png"
+    },
+    {
+        "id": 2,
+        "name": "PHP",
+        "image": "/images/icons/2.png"
+    },
+    {
+        "id": 3,
+        "name": "TypeScript",
+        "image": "/images/icons/3.png"
+    },
+    {
+        "id": 4,
+        "name": "Java",
+        "image": "/images/icons/4.png"
+    },
+    {
+        "id": 5,
+        "name": "C#",
+        "image": "/images/icons/5.png"
+    },
+    {
+        "id": 6,
+        "name": "Dart",
+        "image": "/images/icons/6.png"
+    },
+    {
+        "id": 7,
+        "name": "Python",
+        "image": "/images/icons/7.png"
+    },
+    {
+        "id": 8,
+        "name": "MySQL",
+        "image": "/images/icons/8.png"
+    },
+    {
+        "id": 9,
+        "name": "MongoDB",
+        "image": "/images/icons/9.png"
+    },
+    {
+        "id": 10,
+        "name": "Laravel",
+        "image": "/images/icons/10.png"
+    },
+    {
+        "id": 11,
+        "name": "Node.js",
+        "image": "/images/icons/11.png"
+    },
+    {
+        "id": 12,
+        "name": "Lumen",
+        "image": "/images/icons/12.png"
+    },
+    {
+        "id": 13,
+        "name": "Spring Boot",
+        "image": "/images/icons/13.png"
+    },
+    {
+        "id": 14,
+        "name": ".NET",
+        "image": "/images/icons/14.png"
+    },
+    {
+        "id": 15,
+        "name": "Django",
+        "image": "/images/icons/15.png"
+    },
+    {
+        "id": 16,
+        "name": "Vue",
+        "image": "/images/icons/16.png"
+    },
+    {
+        "id": 17,
+        "name": "React",
+        "image": "/images/icons/17.png"
+    },
+    {
+        "id": 18,
+        "name": "Next.js",
+        "image": "/images/icons/18.png"
+    },
+    {
+        "id": 19,
+        "name": "Three.js",
+        "image": "/images/icons/19.png"
+    },
+    {
+        "id": 20,
+        "name": "Flutter",
+        "image": "/images/icons/20.png"
+    },
+    {
+        "id": 21,
+        "name": "Docker",
+        "image": "/images/icons/21.png"
+    },
+    {
+        "id": 22,
+        "name": "GCP",
+        "image": "/images/icons/22.png"
+    },
+    {
+        "id": 23,
+        "name": "AWS",
+        "image": "/images/icons/23.png"
+    },
+    {
+        "id": 24,
+        "name": "Kong API Gateway",
+        "image": "/images/icons/24.png"
+    },
+    {
+        "id": 25,
+        "name": "Apigee",
+        "image": "/images/icons/25.png"
+    }
+]
+  

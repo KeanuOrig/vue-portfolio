@@ -109,7 +109,6 @@
 </template>
 
 <script>
-    import { defineProps } from 'vue';
     import emailjs from '@emailjs/browser';
 
     export default {

@@ -49,7 +49,7 @@
 </template>
 
 <script setup>
-  import { ref, defineProps, onMounted, nextTick } from 'vue';
+  import { ref, onMounted, nextTick } from 'vue';
   import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
   import experiencesData from '@/assets/data/experiences.json';
 

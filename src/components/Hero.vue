@@ -8,7 +8,7 @@
     <div class='sm:text-6xl text-4xl font-mono'>Keanu Orig</div>
 
     
-    <div class='sm:text-2xl text-1xl font-mono'>Web Developer / Software Engineer</div>
+    <div class='sm:text-2xl text-1xl font-mono'>Full Stack Developer / Software Engineer</div>
 
     <div :class="['relative', isVisible ? 'animate-wiggle' : '']">
       <a href="/Orig_Keanu_Resume.pdf" download>
@@ -36,11 +36,11 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
 
 const props = defineProps({
   isVisible: Boolean
 });
+
 </script>
 
 <style scoped>

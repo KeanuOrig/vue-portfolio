@@ -12,6 +12,9 @@
 			<li @click="scrollTo('projects')" class="text-sm text-gray-100 navi cursor-pointer">
                 Projects
             </li>
+			<li @click="scrollTo('tools')" class="text-sm text-gray-100 navi cursor-pointer">
+                Tools
+            </li>
 			<li @click="scrollTo('contact')" class="text-sm text-gray-100 navi cursor-pointer">
                 Contact
             </li>
@@ -41,7 +44,7 @@
 	.navi:hover{
 	color: #00FF00 !important;
 	}
-	
+
 	.navi::before{
 	content:  "";
 	display: block;
