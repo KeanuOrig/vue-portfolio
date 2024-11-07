@@ -172,7 +172,7 @@
 <style scoped>
 
   .bg-image {
-    background-image: url("../assets/footer.png");
+    background-image: url("@/assets/footer.png");
     background-size: cover;
   }
   

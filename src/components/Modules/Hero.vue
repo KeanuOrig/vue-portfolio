@@ -2,7 +2,7 @@
   <div class="h-screen bg-image flex flex-col items-center justify-center ">
 
     <div :class="['text-center', isVisible ? 'animate-fadeinexpand' : '']">
-      <img src="../assets/self.png" class="w-[50rem] lg:h-[37rem]">
+      <img src="../../assets/self.png" class="w-[50rem] lg:h-[37rem]">
     </div>
 
     <div class='sm:text-6xl text-4xl font-mono'>Keanu Orig</div>

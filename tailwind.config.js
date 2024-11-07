@@ -9,6 +9,7 @@ module.exports = {
       },
       fontFamily: {
         cursive: ['Pacifico', 'cursive'], // You can add more fallback fonts if needed
+        paper: ['Patrick Hand', 'cursive']
       },
       animation: {
         grow: 'grow 1.0s ease-in-out infinite',

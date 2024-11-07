@@ -18,23 +18,46 @@
 			<li @click="scrollTo('contact')" class="text-sm text-gray-100 navi cursor-pointer">
                 Contact
             </li>
+			<li class="text-sm text-gray-100 navi cursor-pointer">
+                <a href="#" @click.prevent="showModal = true">3D</a>
+            </li>
 		</ul>
 	</nav>
+
+	<ConfirmModal
+		:is-visible="showModal"
+		title="Redirect Confirmation"
+		:message=message
+		@confirm="handleConfirm"
+		@close="showModal = false"
+	/>
+
 </template>
 
 <script setup>
+	import { ref } from 'vue';
+	import ConfirmModal from '@/components/Global/ConfirmModal.vue';
+
+	const showModal = ref(false);
+	const message = `Please note that my 3D portfolio is currently under construction.<br><br>You are about to be redirected to a different site. Would you like to continue?`;
 
 	const scrollTo = (view) => {
 		const el = document.getElementById(view);
 		el.scrollIntoView({behavior: "smooth"});
 	};
 	
+	function handleConfirm() {
+		console.log("test")
+		showModal.value = false;
+		window.location.href = "https://portfolio-orig-3d.vercel.app/";
+	}
+
 </script>
 
 <style scoped>
 
 	.bg-image {
-		background-image: url("../assets/background.png");
+		background-image: url("@/assets/background.png");
 	}
 	
 	.navi {

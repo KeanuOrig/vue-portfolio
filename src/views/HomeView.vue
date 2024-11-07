@@ -30,12 +30,12 @@
   import { ref, onMounted, nextTick } from 'vue';
   import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
-  import Hero from '@/components/Hero.vue';
-  import Experience from '@/components/Experience.vue';
-  import Projects from '@/components/Projects.vue';
-  import Contact from '@/components/Contact.vue';
-  import Navbar from '@/components/Navbar.vue';
-  import Tools from '@/components/Tools.vue';
+  import Hero from '@/components/Modules/Hero.vue';
+  import Experience from '@/components/Modules/Experience.vue';
+  import Projects from '@/components/Modules/Projects.vue';
+  import Contact from '@/components/Modules/Contact.vue';
+  import Navbar from '@/components/Modules/Navbar.vue';
+  import Tools from '@/components/Modules/Tools/Tools.vue';
 
   const { visibilityMap, observeElement } = useIntersectionObserver();
 

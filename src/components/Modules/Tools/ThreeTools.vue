@@ -23,7 +23,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { TresCanvas, useRenderLoop, useTexture } from '@tresjs/core'
-import OrbitControls from './Three/OrbitControls.vue'
+import OrbitControls from '@/components/Three/OrbitControls.vue'
 import * as THREE from 'three'
 
 const props = defineProps({
