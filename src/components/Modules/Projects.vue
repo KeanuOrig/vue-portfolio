@@ -15,15 +15,7 @@
                   visibilityMap[index] ? 'animate-growonce' : '']"  
                   :style="{ animationDelay: `${(index + 1) * 200}ms` }">
 
-                  <div 
-                     class="w-[300px] h-[300px] mx-auto flex items-center justify-center bg-primary rounded-2xl mb-8" 
-                     :style="{
-                        'background-image': 'url(' + project.image + ')',
-                        'background-size': 'cover',
-                        'background-repeat': 'no-repeat',
-                        'background-position': 'center'
-                     }"
-                  ></div>
+                  <ImageLoadingBox :src="project.image" :alt="project.title" classImage="w-[300px] h-[300px] mx-auto flex items-center justify-center bg-primary rounded-2xl mb-8 object-cover"/>
 
                   <h4 class="font-semibold text-xl text-dark mb-3">
                      {{ project.title }}
@@ -63,6 +55,7 @@
    import { ref, onMounted, nextTick } from 'vue';
    import projectsData from '@/assets/data/projects.json';
    import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
+   import ImageLoadingBox from '../global/ImageLoadingBox.vue';
 
    const props = defineProps({
    isVisible: Boolean

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
@@ -26,6 +26,7 @@ module.exports = {
         fadeindown: 'fade-in-down 1s ease-in 0.25s 1',
         glow: 'glow 0.6s ease-in-out forwards',
         zoominup: 'zoom-in-up 1s ease-out 0.25s 1',
+        shiny: 'shiny 2.5s infinite',
       },
       keyframes: {
         "grow": {
@@ -170,6 +171,20 @@ module.exports = {
           "100%": {
             opacity: 1,
             transform: "translate3d(0, 0%, 0)"
+          },
+        },
+        "shiny": {
+          "0%": {
+            "background-position-x": "-100vw",
+          },
+          "10%": {
+            "background-position-x": "-100vw",
+          },
+          "75%": {
+            "background-position-x": "100vw",
+          },
+          "100%": {
+            "background-position-x": "100vw",
           },
         },
       },

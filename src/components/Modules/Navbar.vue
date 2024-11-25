@@ -36,7 +36,7 @@
 
 <script setup>
 	import { ref } from 'vue';
-	import ConfirmModal from '@/components/Global/ConfirmModal.vue';
+	import ConfirmModal from '@/components/global/ConfirmModal.vue';
 
 	const showModal = ref(false);
 	const message = `Please note that my 3D portfolio is currently under construction.<br><br>You are about to be redirected to a different site. Would you like to continue?`;
