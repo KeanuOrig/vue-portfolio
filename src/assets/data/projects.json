@@ -78,6 +78,14 @@
         "link": "https://github.com/KeanuOrig/FlutterHRIS",
         "image": "images/p10.png",
         "title": "HRIS Mobile App"
+    },
+    {
+        "id": 11,
+        "date": "2024",
+        "description": "FinSight is an AI-powered stock analysis platform that helps investors make smarter, data-driven decisions. Built with Python Django for the backend and React TypeScript for the frontend.",
+        "link": "https://github.com/KeanuOrig/FinSight",
+        "image": "images/p11.png",
+        "title": "FinSight"
     }
 ]
   

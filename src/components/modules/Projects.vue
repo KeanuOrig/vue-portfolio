@@ -22,7 +22,7 @@
                      <span class="text-sm text-gray-500"> @ {{ project.date }} </span>
                   </h4>
                   
-                  <p class="text-body-color">
+                  <p class="text-body-color text-justify">
                      {{ project.description }}
                   </p>
                   <div v-if=project.link class="absolute bottom-5 right-8 text-right -mx-4 pt-4">
