@@ -6,6 +6,7 @@
         :alt="alt"
         ref="img"
         @load="loaded"
+        loading="lazy"
         :class="classImage"
       />
       <div
