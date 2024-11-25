@@ -7,7 +7,7 @@
       <Suspense>
          <ThreeTools :toolsData="toolsData"/>
          <template #fallback>
-            <div>Loading 3D textures...</div>
+            <span class="loader"></span>
          </template>
       </Suspense>
 
