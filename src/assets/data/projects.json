@@ -86,6 +86,14 @@
         "link": "https://github.com/KeanuOrig/FinSight",
         "image": "images/p11.png",
         "title": "FinSight"
+    },
+    {
+        "id": 12,
+        "date": "2024",
+        "description": "The Instagram automation bot was designed to streamline social media management tasks for a Japanese client. The project was built using Python and integrated with AWS for robust deployment and scalability.",
+        "link": null,
+        "image": "images/p0.jpg",
+        "title": "Instagram Automation Bot"
     }
 ]
   
