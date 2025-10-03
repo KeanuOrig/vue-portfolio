@@ -10,7 +10,7 @@
 
          <div class="flex flex-wrap">
 
-            <div v-for="(project, index) in projectList" :key="project.id" ref="projectRefs" class="w-full md:w-1/2 lg:w-1/3">
+            <div v-for="(project, index) in projectList.slice(0, showCount)" :key="project.id" ref="projectRefs" class="w-full md:w-1/2 lg:w-1/3">
                <div :class="['relative h-[40rem] px-10 pt-10 pb-4 rounded-[20px] bg-white shadow-md hover:shadow-lg mb-8 rounded hover:bg-sky-100', 
                   visibilityMap[index] ? 'animate-growonce' : '']"  
                   :style="{ animationDelay: `${(index + 1) * 200}ms` }">
@@ -44,9 +44,25 @@
                   </div>
                </div>
             </div>
-
          </div>
          
+         <div class="mx-auto text-center mt-8" v-if="projectList.length > defaultCount">
+            <button
+               v-if="showCount < projectList.length"
+               @click="showMore"
+               class="inline-block px-6 py-2 text-white bg-green-600 hover:bg-green-700 rounded-full transition animate-wiggle"
+            >
+               Show More...
+            </button>
+
+            <button
+               v-else
+               @click="showLess"
+               class="inline-block px-6 py-2 text-white bg-gray-600 hover:bg-gray-700 rounded-full transition animate-wiggle"
+            >
+               Show Less
+            </button>
+         </div>
       </div>
    </section>
 </template>
@@ -65,6 +81,16 @@
    const projectRefs = ref([]);
    const { visibilityMap, observeElement } = useIntersectionObserver();
 
+   const defaultCount = 3;
+   const showCount = ref(defaultCount);
+
+   const showMore = () => {
+      showCount.value = projectList.value.length;
+   };
+
+   const showLess = () => {
+      showCount.value = defaultCount;
+   };
    onMounted(async () => {
       await nextTick();
       projectRefs.value.forEach((el, index) => {
