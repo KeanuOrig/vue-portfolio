@@ -90,10 +90,18 @@
     {
         "id": 12,
         "date": "2024",
-        "description": "The Instagram automation bot was designed to streamline social media management tasks for a Japanese client. The project was built using Python and integrated with AWS for robust deployment and scalability.",
+        "description": "The Instagram automation was designed to streamline social media management tasks for a Japanese client. The project was built using Python and integrated with AWS for robust deployment and scalability.",
         "link": null,
         "image": "images/p0.jpg",
-        "title": "Instagram Automation Bot"
+        "title": "Instagram Automation"
+    },
+    {
+        "id": 13,
+        "date": "2025",
+        "description": "A full-stack app built on AWS Fargate with SQS, featuring AI-driven keyword ranking, large-scale web scraping, Selenium-based outreach automation, and HubSpot CRM integration.",
+        "link": null,
+        "image": "images/p0.jpg",
+        "title": "Sales Lead Ranking"
     }
 ]
   
