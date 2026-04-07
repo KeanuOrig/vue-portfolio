@@ -1,107 +1,121 @@
 [
-    {
-        "id": 1,
-        "date": "2018-2022",
-        "description": "Utilized SP3D and Autocad software for GPX and GYO project. Also part of the development team for creating software solutions to expedite construction and instrument deliverables.",
-        "link": null,
-        "image": "images/p7.jpg",
-        "title": "Oil and Gas Plant Model"
-    },
-    {
-        "id": 2,
-        "date": "2021",
-        "description": "This is a capstone project under Zuitt's Fullstack Development bootcamp. It is a responsive ecommerce website using the MERN stack.",
-        "link": "https://cs3-ecommerce-ecru.vercel.app/",
-        "image": "images/p6.png",
-        "title": "Ecommerce Application"
-    },
-    {
-        "id": 3,
-        "date": "2022",
-        "description": "A CRUD application. Built the Front End using React.js while utilizing Redux for application state management. Designed the Back End using Node.js and Express.js for handling HTTP requests and used MySQL for the database.",
-        "link": "https://github.com/KeanuOrig/MovieApp",
-        "image": "images/p5.png",
-        "title": "Movie Review Application"
-    },
-    {
-        "id": 4,
-        "date": "2022",
-        "description": "A responsive and animated landing page for a website showcasing my skills in HTML, CSS, GSAP, and Javascript.",
-        "link": "https://github.com/KeanuOrig/LandingPageEcommerce",
-        "image": "images/p4.png",
-        "title": "Responsive Landing Page"
-    },
-    {
-        "id": 5,
-        "date": "2023",
-        "description": "Led the development efforts to create a comprehensive partner system utilizing technologies such as Lumen and Vue.js.",
-        "link": null,
-        "image": "images/p0.jpg",
-        "title": "Pera Remit System"
-    },
-    {
-        "id": 6,
-        "date": "2023",
-        "description": "Contributed to a team effort to automate the web treasury system, leveraging technologies like Laravel and Google Cloud Scheduler.",
-        "link": null,
-        "image": "images/p0.jpg",
-        "title": "Web Treasury System"
-    },
-    {
-        "id": 7,
-        "date": "2024",
-        "description": "Google AI hackathon entry. A project utilizing Google Gemini AI, empowering users with AI-Powered answers.",
-        "link": "https://devpost.com/software/ai-faq-system?fbclid=IwZXh0bgNhZW0CMTAAAR2XFmppa3tEDfsoXM9bpKzKVCxCtJGANBRRUZRf_0aOfmlp9qgRtYcSW4o_aem_AdIjxseggletwljFfo7QQf-6pJ0TKwHpC_1eDioKanGcSPoBQF-vWs_VxNhFP56TyjCgg4mPSFr1o7lwjZBht574",
-        "image": "images/ai.png",
-        "title": "FAQ System"
-    },
-    {
-        "id": 8,
-        "date": "2024",
-        "description": "Developed a Full Stack Laravel web application for a Japanese client managing multiple hotels, featuring reservation management, payments, orders, third-party API integrations, and more.",
-        "link": null,
-        "image": "images/p0.jpg",
-        "title": "Hotel Property Management System (PMS)"
-    },
-    {
-        "id": 9,
-        "date": "2024",
-        "description": "Developed an interactive Next.js application integrating Three.js for 3D visualizations, enhancing user engagement and providing an immersive experience.",
-        "link": "https://pick-and-go-cafe.vercel.app/",
-        "image": "images/p9.png",
-        "title": "Pick & Go Cafe"
-    },
-    {
-        "id": 10,
-        "date": "2024",
-        "description": "Built an HRIS mobile application for Hipe using Flutter, featuring attendance tracking, leave application management, and an intuitive calendar interface.",
-        "link": "https://github.com/KeanuOrig/FlutterHRIS",
-        "image": "images/p10.png",
-        "title": "HRIS Mobile App"
-    },
-    {
-        "id": 11,
-        "date": "2024",
-        "description": "FinSight is an AI-powered stock analysis platform that helps investors make smarter, data-driven decisions. Built with Python Django for the backend and React TypeScript for the frontend.",
-        "link": "https://github.com/KeanuOrig/FinSight",
-        "image": "images/p11.png",
-        "title": "FinSight"
-    },
-    {
-        "id": 12,
-        "date": "2024",
-        "description": "The Instagram automation was designed to streamline social media management tasks for a Japanese client. The project was built using Python and integrated with AWS for robust deployment and scalability.",
-        "link": null,
-        "image": "images/p0.jpg",
-        "title": "Instagram Automation"
-    },
-    {
-        "id": 13,
-        "date": "2025",
-        "description": "A full-stack app built on AWS Fargate with SQS, featuring AI-driven keyword ranking, large-scale web scraping, Selenium-based outreach automation, and HubSpot CRM integration.",
-        "link": null,
-        "image": "images/p0.jpg",
-        "title": "Sales Lead Ranking"
-    }
+  {
+    "id": 1,
+    "date": "2018-2022",
+    "description": "Utilized SP3D and Autocad software for GPX and GYO project. Also part of the development team for creating software solutions to expedite construction and instrument deliverables.",
+    "link": null,
+    "image": "images/p7.jpg",
+    "title": "Oil and Gas Plant Model"
+  },
+  {
+    "id": 2,
+    "date": "2021",
+    "description": "This is a capstone project under Zuitt's Fullstack Development bootcamp. It is a responsive ecommerce website using the MERN stack.",
+    "link": "https://cs3-ecommerce-ecru.vercel.app/",
+    "image": "images/p6.png",
+    "title": "Ecommerce Application"
+  },
+  {
+    "id": 3,
+    "date": "2022",
+    "description": "A CRUD application. Built the Front End using React.js while utilizing Redux for application state management. Designed the Back End using Node.js and Express.js for handling HTTP requests and used MySQL for the database.",
+    "link": "https://github.com/KeanuOrig/MovieApp",
+    "image": "images/p5.png",
+    "title": "Movie Review Application"
+  },
+  {
+    "id": 4,
+    "date": "2022",
+    "description": "A responsive and animated landing page for a website showcasing my skills in HTML, CSS, GSAP, and Javascript.",
+    "link": "https://github.com/KeanuOrig/LandingPageEcommerce",
+    "image": "images/p4.png",
+    "title": "Responsive Landing Page"
+  },
+  {
+    "id": 5,
+    "date": "2023",
+    "description": "Led the development efforts to create a comprehensive partner system utilizing technologies such as Lumen and Vue.js.",
+    "link": null,
+    "image": "images/p0.jpg",
+    "title": "Pera Remit System"
+  },
+  {
+    "id": 6,
+    "date": "2023",
+    "description": "Contributed to a team effort to automate the web treasury system, leveraging technologies like Laravel and Google Cloud Scheduler.",
+    "link": null,
+    "image": "images/p0.jpg",
+    "title": "Web Treasury System"
+  },
+  {
+    "id": 7,
+    "date": "2024",
+    "description": "Google AI hackathon entry. A project utilizing Google Gemini AI, empowering users with AI-Powered answers.",
+    "link": "https://devpost.com/software/ai-faq-system?fbclid=IwZXh0bgNhZW0CMTAAAR2XFmppa3tEDfsoXM9bpKzKVCxCtJGANBRRUZRf_0aOfmlp9qgRtYcSW4o_aem_AdIjxseggletwljFfo7QQf-6pJ0TKwHpC_1eDioKanGcSPoBQF-vWs_VxNhFP56TyjCgg4mPSFr1o7lwjZBht574",
+    "image": "images/ai.png",
+    "title": "FAQ System"
+  },
+  {
+    "id": 8,
+    "date": "2024",
+    "description": "Developed a Full Stack Laravel web application for a Japanese client managing multiple hotels, featuring reservation management, payments, orders, third-party API integrations, and more.",
+    "link": null,
+    "image": "images/p0.jpg",
+    "title": "Hotel Property Management System (PMS)"
+  },
+  {
+    "id": 9,
+    "date": "2024",
+    "description": "Developed an interactive Next.js application integrating Three.js for 3D visualizations, enhancing user engagement and providing an immersive experience.",
+    "link": "https://pick-and-go-cafe.vercel.app/",
+    "image": "images/p9.png",
+    "title": "Pick & Go Cafe"
+  },
+  {
+    "id": 10,
+    "date": "2024",
+    "description": "Built an HRIS mobile application for Hipe using Flutter, featuring attendance tracking, leave application management, and an intuitive calendar interface.",
+    "link": "https://github.com/KeanuOrig/FlutterHRIS",
+    "image": "images/p10.png",
+    "title": "HRIS Mobile App"
+  },
+  {
+    "id": 11,
+    "date": "2024",
+    "description": "FinSight is an AI-powered stock analysis platform that helps investors make smarter, data-driven decisions. Built with Python Django for the backend and React TypeScript for the frontend.",
+    "link": "https://github.com/KeanuOrig/FinSight",
+    "image": "images/p11.png",
+    "title": "FinSight"
+  },
+  {
+    "id": 12,
+    "date": "2024",
+    "description": "The Instagram automation was designed to streamline social media management tasks for a Japanese client. The project was built using Python and integrated with AWS for robust deployment and scalability.",
+    "link": null,
+    "image": "images/p0.jpg",
+    "title": "Instagram Automation"
+  },
+  {
+    "id": 13,
+    "date": "2025",
+    "description": "A full-stack app built on AWS Fargate with SQS, featuring AI-driven keyword ranking, large-scale web scraping, Selenium-based outreach automation, and HubSpot CRM integration.",
+    "link": null,
+    "image": "images/p0.jpg",
+    "title": "Sales Lead Ranking"
+  },
+  {
+    "id": 14,
+    "date": "2026",
+    "description": "A desktop GUI editor for PHITS Monte Carlo radiation simulation, built with Python. Features 2D/3D viewport rendering, tetrahedral mesh visualization, and multi-section editing.",
+    "image": "images/p_phits.png",
+    "title": "PHITS Radiation Simulator GUI"
+  },
+  {
+    "id": 15,
+    "date": "2026",
+    "description": "A full-stack electronic bookkeeping and invoicing web app with AI-OCR capabilities. Built with Next.js, TypeScript, Prisma, and PostgreSQL. Features multi-tenant management, PDF invoice generation, accounting ledgers with CSV export, and OpenAI GPT-4o Vision for automated document extraction.",
+    "link": null,
+    "image": "images/p0.jpg",
+    "title": "Electronic Record-Keeping System"
+  }
 ]
-  

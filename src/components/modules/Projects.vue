@@ -26,20 +26,24 @@
                      {{ project.description }}
                   </p>
                   <div v-if=project.link class="absolute bottom-5 right-8 text-right -mx-4 pt-4">
-                     <div class="inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm">
+                     <a :href=project.link target="_blank" class="inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm hover:bg-gray-100 transition">
                        <div class="absolute flex-shrink-0 flex items-center justify-center">
                          <span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>
                        </div>
-                       <a :href=project.link target="_blank" class="ml-3.5 font-medium text-gray-900">Link</a>
-                     </div>
+                       <span class="ml-3.5 font-medium text-gray-900">Link</span>
+                     </a>
                   </div>
 
                   <div v-else class="absolute bottom-5 right-8 text-right -mx-4 pt-4">
-                     <div class="inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm">
+                     <div class="group relative inline-flex items-center rounded-full border border-gray-300 px-3 py-0.5 text-sm cursor-not-allowed hover:border-red-300 hover:bg-red-50 transition-all duration-200">
                        <div class="absolute flex-shrink-0 flex items-center justify-center">
-                         <span class="h-1.5 w-1.5 rounded-full bg-red-500"></span>
+                         <span class="h-1.5 w-1.5 rounded-full bg-red-500 group-hover:animate-pulse"></span>
                        </div>
-                       <a :href=project.link target="_blank" class="ml-3.5 font-medium text-gray-900">Link</a>
+                       <span class="ml-3.5 font-medium text-gray-400 group-hover:text-red-400 transition-colors duration-200">Link</span>
+                       <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 text-xs font-medium text-white bg-red-500 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-200 scale-95 group-hover:scale-100 pointer-events-none shadow-lg">
+                         Unavailable
+                         <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-4 border-transparent border-t-red-500"></div>
+                       </div>
                      </div>
                   </div>
                </div>
