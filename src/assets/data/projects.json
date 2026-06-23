@@ -113,9 +113,17 @@
   {
     "id": 15,
     "date": "2026",
-    "description": "A full-stack electronic bookkeeping and invoicing web app with AI-OCR capabilities. Built with Next.js, TypeScript, Prisma, and PostgreSQL. Features multi-tenant management, PDF invoice generation, accounting ledgers with CSV export, and OpenAI GPT-4o Vision for automated document extraction.",
+    "description": "A full-stack bookkeeping and invoicing web app built with Next.js, TypeScript, Prisma, and PostgreSQL. Features multi-tenant management, PDF invoice generation, accounting ledgers with CSV export, and AI-OCR document extraction via OpenAI GPT-4o Vision.",
     "link": null,
     "image": "images/p0.jpg",
     "title": "Electronic Record-Keeping System"
+  },
+  {
+    "id": 16,
+    "date": "2026",
+    "description": "A PyQt6 desktop app for Kyushu University that automates CT patient-dose calculation with PHITS Monte Carlo simulation. Features DICOM CT import, a 4-pane viewer (axial/coronal/sagittal/3D), PHITS input generation with live run logs, and dose overlay with ROI/VOI/profile analysis.",
+    "link": null,
+    "image": "images/rt_phits.png",
+    "title": "RT-PHITS CT Dose GUI"
   }
 ]
